@@ -8,4 +8,6 @@ services:
       - '27017:27017'
     init: true
     environment:
+      - MONGO_INITDB_USERNAME="user"
+      - MONGO_INITDB_PASSWORD="pass"
       - MONGODB_DATABASE="admin"
